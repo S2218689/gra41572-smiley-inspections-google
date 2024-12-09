@@ -16,6 +16,6 @@ df = pd.read_csv("model_data.csv",dtype={"post_code": object})
 # distribution and how each category is defined. 
 ax = sns.jointplot(data=df, x = "weighted_score", y="priority")
 ax.set_axis_labels("Weighted Score","priority", fontsize=12)
-ax.fig.suptitle("Categorisation")
+ax.fig.suptitle("Categorisation results")
 ax.fig.subplots_adjust(top=0.95)
 plt.show()
